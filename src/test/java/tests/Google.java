@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import utilities.Driver;
 
 public class Google {
-    @Test
+    @Test(groups = {"smoke"})
     public void search() {
         Driver.getDriver().get("https://google.com");
         Driver.getDriver().findElement(By.name("q")).sendKeys("Selenium" + Keys.ENTER);
@@ -19,6 +19,7 @@ public class Google {
     public void login() {
         Driver.getDriver().get("https://google.com");
         System.out.println(Driver.getDriver().getTitle());
+        Assert.fail("on purpose");
     }
 
     @AfterMethod
