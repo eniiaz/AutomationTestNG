@@ -19,7 +19,7 @@ public class Google {
     public void login() {
         Driver.getDriver().get("https://google.com");
         System.out.println(Driver.getDriver().getTitle());
-        Assert.fail("on purpose");
+
     }
 
     @AfterMethod

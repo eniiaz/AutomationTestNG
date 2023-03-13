@@ -19,6 +19,7 @@ public class SupplySync {
         String expectedURL = "https://supplysync.us/dashboard/companies";
         Flow.wait(1500);
         Assert.assertEquals(expectedURL, Driver.getDriver().getCurrentUrl());
+
     }
 
     @Test
