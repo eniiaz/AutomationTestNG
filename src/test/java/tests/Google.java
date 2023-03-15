@@ -19,7 +19,16 @@ public class Google {
     public void login() {
         Driver.getDriver().get("https://google.com");
         System.out.println(Driver.getDriver().getTitle());
+    }
 
+    @Test
+    public void launchExtension(){
+        System.out.println("Launching the extension manager tab");
+    }
+
+    @Test
+    public void check(){
+        System.out.println("Checking something");
     }
 
     @AfterMethod
